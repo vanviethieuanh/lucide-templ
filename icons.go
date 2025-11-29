@@ -1,4 +1,4 @@
-package lucide_icons
+package lucide_templ 
 
 type Props struct {
 	Size        int
