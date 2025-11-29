@@ -1,4 +1,4 @@
-module github.com/vanviethieuanh/lucide_icons
+module github.com/vanviethieuanh/lucide_templ
 
 go 1.25.4
 
