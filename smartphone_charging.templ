@@ -1,0 +1,16 @@
+package lucide_templ
+
+templ SmartphoneCharging(props ...Props) {
+    {{ p := GetOrDefaults(props...) }}
+    <svg
+  xmlns="http://www.w3.org/2000/svg" width={ p.Size } height={ p.Size }
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor" stroke-width={ p.StrokeWidth }
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width={ p.Size } height={ p.Size } x="5" y="2" rx="2" ry="2" />
+  <path d="M12.667 8 10 12h4l-2.667 4" />
+</svg>
+}

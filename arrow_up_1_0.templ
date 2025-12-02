@@ -1,0 +1,19 @@
+package lucide_templ
+
+templ ArrowUp10(props ...Props) {
+    {{ p := GetOrDefaults(props...) }}
+    <svg
+  xmlns="http://www.w3.org/2000/svg" width={ p.Size } height={ p.Size }
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor" stroke-width={ p.StrokeWidth }
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m3 8 4-4 4 4" />
+  <path d="M7 4v16" />
+  <path d="M17 10V4h-2" />
+  <path d="M15 10h4" />
+  <rect x="15" y="14" width={ p.Size } height={ p.Size } ry="2" />
+</svg>
+}

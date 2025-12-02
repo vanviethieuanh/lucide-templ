@@ -1,0 +1,17 @@
+package lucide_templ
+
+templ CircleArrowOutUpLeft(props ...Props) {
+    {{ p := GetOrDefaults(props...) }}
+    <svg
+  xmlns="http://www.w3.org/2000/svg" width={ p.Size } height={ p.Size }
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor" stroke-width={ p.StrokeWidth }
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2 8V2h6" />
+  <path d="m2 2 10 10" />
+  <path d="M12 2A10 10 0 1 1 2 12" />
+</svg>
+}

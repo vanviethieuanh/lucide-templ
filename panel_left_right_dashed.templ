@@ -1,0 +1,23 @@
+package lucide_templ
+
+templ PanelLeftRightDashed(props ...Props) {
+    {{ p := GetOrDefaults(props...) }}
+    <svg
+  xmlns="http://www.w3.org/2000/svg" width={ p.Size } height={ p.Size }
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor" stroke-width={ p.StrokeWidth }
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 10V9" />
+  <path d="M15 15v-1" />
+  <path d="M15 21v-2" />
+  <path d="M15 5V3" />
+  <path d="M9 10V9" />
+  <path d="M9 15v-1" />
+  <path d="M9 21v-2" />
+  <path d="M9 5V3" />
+  <rect x="3" y="3" width={ p.Size } height={ p.Size } rx="2" />
+</svg>
+}

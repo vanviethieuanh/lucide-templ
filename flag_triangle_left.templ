@@ -1,0 +1,15 @@
+package lucide_templ
+
+templ FlagTriangleLeft(props ...Props) {
+    {{ p := GetOrDefaults(props...) }}
+    <svg
+  xmlns="http://www.w3.org/2000/svg" width={ p.Size } height={ p.Size }
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor" stroke-width={ p.StrokeWidth }
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 22V2.8a.8.8 0 0 0-1.17-.71L5.45 7.78a.8.8 0 0 0 0 1.44L18 15.5" />
+</svg>
+}

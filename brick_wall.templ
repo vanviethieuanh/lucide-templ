@@ -1,0 +1,22 @@
+package lucide_templ
+
+templ BrickWall(props ...Props) {
+    {{ p := GetOrDefaults(props...) }}
+    <svg
+  xmlns="http://www.w3.org/2000/svg" width={ p.Size } height={ p.Size }
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor" stroke-width={ p.StrokeWidth }
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width={ p.Size } height={ p.Size } x="3" y="3" rx="2" />
+  <path d="M12 9v6" />
+  <path d="M16 15v6" />
+  <path d="M16 3v6" />
+  <path d="M3 15h18" />
+  <path d="M3 9h18" />
+  <path d="M8 15v6" />
+  <path d="M8 3v6" />
+</svg>
+}

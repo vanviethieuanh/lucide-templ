@@ -1,0 +1,17 @@
+package lucide_templ
+
+templ Mic(props ...Props) {
+    {{ p := GetOrDefaults(props...) }}
+    <svg
+  xmlns="http://www.w3.org/2000/svg" width={ p.Size } height={ p.Size }
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor" stroke-width={ p.StrokeWidth }
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 19v3" />
+  <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+  <rect x="9" y="2" width={ p.Size } height={ p.Size } rx="3" />
+</svg>
+}

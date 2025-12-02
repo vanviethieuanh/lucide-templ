@@ -1,0 +1,18 @@
+package lucide_templ
+
+templ MonitorStop(props ...Props) {
+    {{ p := GetOrDefaults(props...) }}
+    <svg
+  xmlns="http://www.w3.org/2000/svg" width={ p.Size } height={ p.Size }
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor" stroke-width={ p.StrokeWidth }
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 17v4" />
+  <path d="M8 21h8" />
+  <rect x="2" y="3" width={ p.Size } height={ p.Size } rx="2" />
+  <rect x="9" y="7" width={ p.Size } height={ p.Size } rx="1" />
+</svg>
+}

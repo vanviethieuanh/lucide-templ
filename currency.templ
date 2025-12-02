@@ -1,0 +1,19 @@
+package lucide_templ
+
+templ Currency(props ...Props) {
+    {{ p := GetOrDefaults(props...) }}
+    <svg
+  xmlns="http://www.w3.org/2000/svg" width={ p.Size } height={ p.Size }
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor" stroke-width={ p.StrokeWidth }
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="8" />
+  <line x1="3" x2="6" y1="3" y2="6" />
+  <line x1="21" x2="18" y1="3" y2="6" />
+  <line x1="3" x2="6" y1="21" y2="18" />
+  <line x1="21" x2="18" y1="21" y2="18" />
+</svg>
+}

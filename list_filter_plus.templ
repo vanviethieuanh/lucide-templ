@@ -1,0 +1,19 @@
+package lucide_templ
+
+templ ListFilterPlus(props ...Props) {
+    {{ p := GetOrDefaults(props...) }}
+    <svg
+  xmlns="http://www.w3.org/2000/svg" width={ p.Size } height={ p.Size }
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor" stroke-width={ p.StrokeWidth }
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 5H2" />
+  <path d="M6 12h12" />
+  <path d="M9 19h6" />
+  <path d="M16 5h6" />
+  <path d="M19 8V2" />
+</svg>
+}
