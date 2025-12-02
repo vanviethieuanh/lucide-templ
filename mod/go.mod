@@ -1,4 +1,4 @@
-module github.com/vanviethieuanh/lucide_templ
+module github.com/vanviethieuanh/lucide-templ
 
 go 1.25.4
 
